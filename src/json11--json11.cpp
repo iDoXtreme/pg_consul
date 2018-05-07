@@ -219,7 +219,7 @@ public:
 
 class JsonNull final : public Value<Json::NUL, NullStruct> {
 public:
-    JsonNull() : Value(nullptr) {}
+    JsonNull() : Value({}}) {}
 };
 
 /* * * * * * * * * * * * * * * * * * * *
