@@ -23,9 +23,9 @@ export PG_REGRESS_DIFF_OPTS=-u
 PG_CPPFLAGS+=-pedantic -Wall
 PG_CPPFLAGS+=-Wno-deprecated-register -Wno-unused-local-typedef
 PG_CPPFLAGS+=-I./include
-PG_CPPFLAGS+=-std=c++14
+PG_CPPFLAGS+=-std=c++14 -fPIC
 #PG_CPPFLAGS+=-fno-exceptions
-SHLIB_LINK=-std=c++14 -stdlib=libc++ -lcurl
+SHLIB_LINK=-std=c++14 -lcurl
 EXTRA_CLEAN	= playground/*.o \
 	playground/consul-kv \
 	playground/consul-status
